@@ -1,0 +1,155 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+#container {
+    width: 50%;
+    display: flex;
+    margin: 7em auto;
+
+
+}
+
+.heading {
+    margin-top: 1em;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 1em;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 0.6em;
+}
+
+.content-div1 {
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 10px 0 0 10px;
+
+}
+
+.content-div2 {
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+
+}
+
+.content-div3 {
+    width: 100%;
+    padding: 2em;
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.sedan-btn {
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 30px;
+    border-style: none;
+    color: hsl(31, 77%, 52%);
+    margin-top: 2em;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.suv-btn {
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 30px;
+    border-style: none;
+    color: hsl(184, 100%, 22%);
+    margin-top: 2em;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.luxury-btn {
+    width: 80%;
+    padding: 0.5em;
+    border-radius: 30px;
+    border-style: none;
+    color: hsl(179, 100%, 13%);
+    margin-top: 2em;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+@media screen and (max-width:375px){
+    #container {
+        width: 80%;
+        display: flex;
+       margin: 3em auto;
+        flex-direction: column;
+    }
+    .content-div1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .content-div3{
+        border-radius: 0px 0px 10px 10px;
+    }
+    p{
+        font-size: 1em;
+    }
+}
