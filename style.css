@@ -136,10 +136,9 @@ p {
     font-weight: weight;
     font-style: normal;
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:431px){
     #container {
-        width: 80%;
-        display: flex;
+        width: 70%;
        margin: 3em auto;
         flex-direction: column;
     }
